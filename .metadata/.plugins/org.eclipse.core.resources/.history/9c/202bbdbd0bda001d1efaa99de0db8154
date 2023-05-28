@@ -1,0 +1,38 @@
+package lk.hnb.main;
+
+import java.util.List;
+
+import javax.persistence.ParameterMode;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.procedure.ProcedureCall;
+
+import lk.hnb.utils.HibernateUtil;
+
+public class SelectQueryApp {
+
+	@SuppressWarnings("unchecked")
+	public static void main(String[] args) {
+		Session session = null;
+		try {
+			session = HibernateUtil.getSession();
+
+			if (session != null) {
+				session.createQuery("from lk.hnb.model.Insurancepolicy");
+			}
+								
+			
+		} catch (HibernateException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			
+			HibernateUtil.closeSession(session);
+			HibernateUtil.closeSessionFactory();
+
+		}
+	}
+
+}

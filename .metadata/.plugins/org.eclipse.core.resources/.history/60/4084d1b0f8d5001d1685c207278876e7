@@ -1,0 +1,52 @@
+package lk.sakila.main;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import lk.sakila.model.BankAccount;
+import lk.sakila.model.Customer;
+import lk.sakila.utils.HibernateUtil;
+
+public class SelectApp {
+
+	public static void main(String[] args) {
+		Session session = null;
+		Boolean flag = false;
+		Transaction transaction = null;
+		Long id = null;
+		BankAccount account = null;
+		try {
+			session = HibernateUtil.getSession();
+			
+			if(session!=null)
+				transaction = session.beginTransaction();
+			if(transaction!=null) {
+				account = new BankAccount();
+				account.setBalance(40000.00);
+				account.setHolderName("Mahela");
+				account.setType("Current");
+				id = (Long) session.save(account);
+				flag = true;
+			}
+		} catch(HibernateException e){
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			if(flag) {
+				transaction.commit();
+				System.out.println("Customer added with ID :"+id);
+			}
+			else
+			{
+				transaction.rollback();
+				System.out.println("Unable to save the cutomer..");
+			}
+			HibernateUtil.closeSession(session);
+			HibernateUtil.closeSessionFactory();
+			
+		}
+	}
+
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="lk.iqrah.model.Student"/>
+    <fullyQualifiedTypeName name="lk.iqrah.model.StudentAutoMapping"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.DynamicInsert"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.DynamicUpdate"/>
+    <fullyQualifiedTypeName name="lk.iqrah.utils.HibernateUtil"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.Generated"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.GenericGenerators"/>
+    <fullyQualifiedTypeName name="lk.iqrah.model.Student2"/>
+    <fullyQualifiedTypeName name="lk.iqrah.model.PersonInfo"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="lk.iqrah.model.MobileCustomer"/>
+    <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+    <fullyQualifiedTypeName name="lk.hnb.model.Customer"/>
+    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+    <fullyQualifiedTypeName name="org.hibernate.Session"/>
+    <fullyQualifiedTypeName name="org.hibernate.HibernateException"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.UpdateTimestamp"/>
+    <fullyQualifiedTypeName name="lk.hnb.model.BankAccount"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="lk.hnb.utils.HibernateUtil"/>
+    <fullyQualifiedTypeName name="lk.hnb.model.InsurancePolicy"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.Entity"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.Table"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="lk.sakila.model.Actor"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="org.hibernate.internal.build.AllowSysOut"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="javax.persistence.ParameterMode"/>
+</qualifiedTypeNameHistroy>

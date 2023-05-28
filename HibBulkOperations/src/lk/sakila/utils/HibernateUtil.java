@@ -1,0 +1,36 @@
+package lk.sakila.utils;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import lk.sakila.model.Actor;
+
+public class HibernateUtil {
+	private static SessionFactory sessionFactory = null;
+	private static Session session = null;
+	
+	static {
+		sessionFactory = new Configuration()
+				.configure()
+				.addAnnotatedClass(Actor.class)
+				.buildSessionFactory();
+	}
+	public static Session getSession() {
+		if(session == null)
+			session = sessionFactory.openSession();
+		return session;
+	}
+	
+	public static void closeSession(Session session)
+	{
+		if(session !=null)
+			session.close();
+	}
+	
+	public static void closeSessionFactory()
+	{
+		if(sessionFactory != null)
+			sessionFactory.close();
+	}
+}

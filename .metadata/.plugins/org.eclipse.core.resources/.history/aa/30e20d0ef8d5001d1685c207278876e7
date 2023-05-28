@@ -1,0 +1,5 @@
+package lk.sakila.model;
+
+public class Customer {
+
+}
